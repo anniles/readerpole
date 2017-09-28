@@ -1,0 +1,39 @@
+@import 'colors'
+
+.newsBox
+  max-width: 22rem
+  width: 100%
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  border: 3px solid $rp__bg
+
+.newsBox__image
+  background-image: url('./../images/politics.jpg')
+  height: 13rem
+  flex: 2
+  width: 100%
+  background-size: cover
+
+.newsBox__info
+  flex: 1
+  display: flex
+
+.newsBox__category
+  flex: 1
+  background-color: $rp__orange
+  color: $rp__white
+  display: flex
+  justify-content: center
+  align-items: center
+  text-align: center
+  h3
+    text-transform: uppercase
+    font-size: 1rem
+
+.newsBox__title
+  flex: 2
+  background-color: $rp__black
+  color: $rp__white
+  padding: 0.5rem 1rem
