@@ -7,7 +7,7 @@ class App extends Component {
   render() {
     return (
       <div className="header">
-        {[...Array(3)].map((x, i) =>
+        {[...Array(6)].map((x, i) =>
           <NewsBox key={i} />
         )}
       </div>
