@@ -6,7 +6,7 @@ import { NewsBox } from './../../components/NewsBox'
 class App extends Component {
   render() {
     return (
-      <div className="header">
+      <div className="newsBox-container">
         {[...Array(6)].map((x, i) =>
           <NewsBox key={i} />
         )}
