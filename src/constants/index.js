@@ -1,0 +1,1 @@
+export default ORANGE_COLOR = '#CC5E42';

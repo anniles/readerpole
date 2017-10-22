@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 3px solid #252324;
+  border: 1px solid #252324;
   margin: 15px; }
 
 .newsBox__image {
