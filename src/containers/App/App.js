@@ -7,12 +7,14 @@ import Header from './../../components/Header';
 class App extends Component {
   render() {
     return (
-      <div className="newsBox-container">
+      <div>
         <Header />
+        <div className="newsBox-container">
 
-        {[...Array(6)].map((x, i) =>
-          <NewsBox key={i} />
-        )}
+          {[...Array(6)].map((x, i) =>
+            <NewsBox key={i} />
+          )}
+        </div>
       </div>
     );
   }
