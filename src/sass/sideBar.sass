@@ -1,0 +1,43 @@
+@import 'colors';
+
+.sideBar
+  max-width: 300px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+.sideBar__user
+  display: flex;
+  align-items: center;
+  height: 60px;
+  background-color: $rp__orange;
+  width: 100%;
+  justify-content: space-around;
+  text-transform: uppercase;
+  h2
+    margin: 0;
+    font-size: 1.5rem;
+    color: $white;
+  svg
+    cursor: pointer;
+
+.sideBar__menu
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex: 1;
+  background-color: $rp__bg;
+  padding: 2rem 0 0 0;
+  h3
+    background-color: $rp__black;
+    color: $white;
+    padding: 0.5rem 1rem;
+    margin: 0;
+    text-transform: uppercase;
+  ul
+    padding: 0;
+    margin: 0;
+    li
+      list-style: none;
+      color: $white;

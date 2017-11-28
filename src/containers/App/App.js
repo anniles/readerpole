@@ -1,19 +1,24 @@
 import React, { Component } from 'react';
-import logo from './../../images/logo.svg';
+
 import './../../css/App.css';
 import { NewsBox } from './../../components/NewsBox';
 import Header from './../../components/Header';
+import SideBar from './../../components/SideBar';
 
 class App extends Component {
   render() {
     return (
-      <div>
-        <Header />
-        <div className="newsBox-container">
+      <div className="root__wrapper">
+        <SideBar />
 
-          {[...Array(6)].map((x, i) =>
-            <NewsBox key={i} />
-          )}
+        <div className="main">
+          <Header />
+          <div className="newsBox-container">
+
+            {[...Array(6)].map((x, i) =>
+              <NewsBox key={i} />
+            )}
+          </div>
         </div>
       </div>
     );

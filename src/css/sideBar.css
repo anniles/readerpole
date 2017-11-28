@@ -1,0 +1,41 @@
+.sideBar {
+  max-width: 300px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+
+.sideBar__user {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  background-color: #CC5E42;
+  width: 100%;
+  justify-content: space-around;
+  text-transform: uppercase; }
+  .sideBar__user h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #fff; }
+  .sideBar__user svg {
+    cursor: pointer; }
+
+.sideBar__menu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex: 1;
+  background-color: #252324;
+  padding: 2rem 0 0 0; }
+  .sideBar__menu h3 {
+    background-color: #191816;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    margin: 0;
+    text-transform: uppercase; }
+  .sideBar__menu ul {
+    padding: 0;
+    margin: 0; }
+    .sideBar__menu ul li {
+      list-style: none;
+      color: #fff; }

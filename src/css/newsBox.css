@@ -1,5 +1,5 @@
 .newsBox {
-  max-width: 335px;
+  max-width: 315px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -10,7 +10,7 @@
 
 .newsBox__image {
   background-image: url("./../images/politics.jpg");
-  height: 250px;
+  height: 200px;
   flex: 2;
   width: 100%;
   background-size: cover; }
