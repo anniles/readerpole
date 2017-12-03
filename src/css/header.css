@@ -1,21 +1,37 @@
 .header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   background-color: #252324;
   padding: 0 2rem;
-  height: 60px; }
+  height: 60px;
+  position: fixed;
+  width: calc(100% - 366px);
+  flex: 1;
+  margin-left: 300px;
+  z-index: 1; }
 
 .header__nav {
   display: flex;
+  align-items: center;
   padding: 0;
   color: #fff;
   flex: 2;
   margin: 0; }
   .header__nav li {
     list-style: none;
-    padding-right: 1rem;
-    cursor: pointer; }
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #252324;
+    transition: all .2s;
+    margin-bottom: 2px; }
+    .header__nav li p {
+      margin: 0;
+      padding: 0 0.5rem; }
+    .header__nav li:hover {
+      color: #CC5E42;
+      border-bottom: 2px solid #CC5E42; }
 
 .header__search {
   display: flex;

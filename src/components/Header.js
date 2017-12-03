@@ -7,9 +7,15 @@ const Header = () => {
   return (
     <div className="header">
       <ul className="header__nav">
-        <li>FEED</li>
-        <li>PROFILE</li>
-        <li>DISCOVER</li>
+        <li>
+          <p>FEED</p>
+        </li>
+        <li>
+          <p>PROFILE</p>
+        </li>
+        <li>
+          <p>DISCOVER</p>
+        </li>
       </ul>
 
       <div className="header__search">

@@ -3,21 +3,37 @@
 .header
   display: flex;
   justify-content: space-between;
-  align-items: center;
   background-color: $rp__bg;
   padding: 0 2rem;
   height: 60px;
+  position: fixed;
+  width: calc(100% - 366px);
+  flex: 1;
+  margin-left: 300px;
+  z-index: 1;
 
 .header__nav
   display: flex;
+  align-items: center;
   padding: 0;
   color: $white;
   flex: 2;
   margin: 0;
   li
     list-style: none;
-    padding-right: 1rem;
     cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid $rp__bg;
+    transition: all .2s;
+    margin-bottom: 2px;
+    p
+      margin: 0;
+      padding: 0 0.5rem;
+    &:hover
+      color: $rp__orange;
+      border-bottom: 2px solid $rp__orange;
 
 .header__search
   display: flex;
