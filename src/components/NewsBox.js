@@ -1,7 +1,7 @@
 import React from 'react';
 
 export const NewsBox = props => {
-  const { actions, title, image, description } = props;
+  const { actions, logo, title, image, description } = props;
 
   const imgBg = {
     backgroundImage: `url(${image})`
@@ -18,6 +18,7 @@ export const NewsBox = props => {
 
       <div className="newsBox__info">
         <div className="newsBox__category">
+          {logo}
           <h3>{title}</h3>
         </div>
 

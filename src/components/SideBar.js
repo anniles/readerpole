@@ -1,6 +1,7 @@
 import React from 'react';
 import GearIcon from './GearIcon';
 import './../css/sideBar.css';
+import Bg1 from './../images/1.jpg';
 
 const sideMenu = {
   'Sources': ['papos', 'fia', 'three'],
@@ -8,12 +9,19 @@ const sideMenu = {
   'People': ['one', 'two', 'three'],
 }
 
+const user = {
+  'name' : 'Apos',
+  'avatar': Bg1,
+}
+
 const SideBar = () => {
   return (
     <aside className="sideBar">
       <div className="sideBar__user">
-        <img src="src/images/politics.jpg" alt=""/>
-        <h2>Gerald</h2>
+        <div className="sideBar__user-avatar">
+          <img src={user.avatar} alt={`${user.name} avatar`}/>
+        </div>
+        <h2>{user.name}</h2>
         <GearIcon />
       </div>
 
