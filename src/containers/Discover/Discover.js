@@ -4,14 +4,14 @@ import React, { Component } from 'react';
 import Header from './../../components/Header';
 import SideBar from './../../components/SideBar';
 
-class UserPage extends Component {
+class Discover extends Component {
   render() {
     return (
       <div className="main">
-        <h1>hello UserPage</h1>
+        <h1>hello Discover</h1>
       </div>
     );
   }
 }
 
-export default UserPage;
+export default Discover;
