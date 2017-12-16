@@ -2,7 +2,8 @@ import React from 'react';
 import {
   BrowserRouter as Router,
   Route,
-  Link
+  Link,
+  NavLink
 } from 'react-router-dom'
 
 import App from './../containers/App/App.js';
@@ -17,9 +18,9 @@ const Header = () => {
   return (
     <div className="header">
       <ul className="header__nav">
-        <li><Link to="/">FEED</Link></li>
-        <li><Link to="/profile">PROFILE</Link></li>
-        <li><Link to="discover">DISCOVER</Link></li>
+        <li><NavLink to="/feed">FEED</NavLink></li>
+        <li><NavLink to="/profile">PROFILE</NavLink></li>
+        <li><NavLink to="/discover">DISCOVER</NavLink></li>
       </ul>
 
       <div className="header__search">

@@ -9,9 +9,9 @@ import Discover from './../containers/Discover/Discover.js';
 const Main = () => (
   <main>
     <Switch>
-      <Route exact path="/" component={Feed}/>
-      <Route path="/profile" component={UserPage}/>
-      <Route path="/discover" component={Discover}/>
+      <Route exact path="/feed" component={Feed}/>
+      <Route exact path="/profile" component={UserPage}/>
+      <Route exact path="/discover" component={Discover}/>
     </Switch>
   </main>
 )

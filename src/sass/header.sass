@@ -16,24 +16,34 @@
   display: flex;
   align-items: center;
   padding: 0;
-  color: $white;
   flex: 2;
   margin: 0;
+  color: $white;
   li
     list-style: none;
     cursor: pointer;
     height: 100%;
     display: flex;
-    align-items: center;
-    border-bottom: 2px solid $rp__bg;
+    // align-items: center;
+    // border-bottom: 2px solid $rp__bg;
     transition: all .2s;
     margin-bottom: 2px;
-    p
+    a
+      transition: all .2s;
+      color: $white;
+      text-decoration: none;
       margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom: 2px solid $rp__bg;
       padding: 0 0.5rem;
+      &.active,
+      &:hover
+        color: $rp__orange;
+        border-bottom: 2px solid $rp__orange;
     &:hover
       color: $rp__orange;
-      border-bottom: 2px solid $rp__orange;
 
 .header__search
   display: flex;

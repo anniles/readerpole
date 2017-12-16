@@ -14,24 +14,31 @@
   display: flex;
   align-items: center;
   padding: 0;
-  color: #fff;
   flex: 2;
-  margin: 0; }
+  margin: 0;
+  color: #fff; }
   .header__nav li {
     list-style: none;
     cursor: pointer;
     height: 100%;
     display: flex;
-    align-items: center;
-    border-bottom: 2px solid #252324;
     transition: all .2s;
     margin-bottom: 2px; }
-    .header__nav li p {
+    .header__nav li a {
+      transition: all .2s;
+      color: #fff;
+      text-decoration: none;
       margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom: 2px solid #252324;
       padding: 0 0.5rem; }
+      .header__nav li a.active, .header__nav li a:hover {
+        color: #CC5E42;
+        border-bottom: 2px solid #CC5E42; }
     .header__nav li:hover {
-      color: #CC5E42;
-      border-bottom: 2px solid #CC5E42; }
+      color: #CC5E42; }
 
 .header__search {
   display: flex;
