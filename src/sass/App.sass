@@ -11,13 +11,18 @@ body
 
 .root__wrapper
   display: flex;
+  justify-content: flex-end;
 
 h1
   color: $rp__white
 
+.main__wrapper
+  max-width: calc(100% - 300px);
+  width: 100%;
+
 .main
   flex: 1;
-  margin: 60px 0 0 300px;
+  margin-top: 60px;
   width: 100%;
 
 ::-webkit-scrollbar

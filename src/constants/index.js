@@ -1,6 +1,6 @@
 import React from 'react';
 
-import FullLogo from './../components/FullLogo';
+import FullLogo from './../components/svg/FullLogo';
 import Bg1 from './../images/1.jpg';
 import Bg2 from './../images/2.jpg';
 import Bg3 from './../images/3.jpg';
@@ -10,7 +10,7 @@ import Bg6 from './../images/6.jpg';
 import Bg7 from './../images/7.jpg';
 import Bg8 from './../images/8.jpg';
 
-export const ORANGE_COLOR = '#CC5E42';
+export const ORANGE_COLOR = '#ec7c5d';
 
 export const news = [
   {
@@ -70,3 +70,15 @@ export const news = [
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. labore reprehenderit aperiam!',
   },
 ];
+
+export const sideMenu = {
+  'Sources': ['papos', 'fia', 'three'],
+  'Topics': ['one', 'two', 'three'],
+  'People': ['one', 'two', 'three'],
+};
+
+export const user = {
+  'name' : 'Apos',
+  'avatar': Bg1,
+  'role': 'reader',
+};

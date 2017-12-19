@@ -1,18 +1,8 @@
 import React from 'react';
-import GearIcon from './GearIcon';
+import GearIcon from './svg/GearIcon';
 import './../css/sideBar.css';
 import Bg1 from './../images/1.jpg';
-
-const sideMenu = {
-  'Sources': ['papos', 'fia', 'three'],
-  'Topics': ['one', 'two', 'three'],
-  'People': ['one', 'two', 'three'],
-}
-
-const user = {
-  'name' : 'Apos',
-  'avatar': Bg1,
-}
+import { user, sideMenu } from './../constants';
 
 const SideBar = () => {
   return (

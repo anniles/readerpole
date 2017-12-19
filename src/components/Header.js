@@ -10,8 +10,8 @@ import App from './../containers/App/App.js';
 import UserPage from './../containers/UserPage/UserPage.js';
 import Discover from './../containers/Discover/Discover.js';
 
-import FullLogo from './FullLogo';
-import SearchIcon from './SearchIcon';
+import FullLogo from './svg/FullLogo';
+import SearchIcon from './svg/SearchIcon';
 import './../css/header.css';
 
 const Header = () => {

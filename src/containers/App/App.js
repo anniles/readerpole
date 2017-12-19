@@ -14,7 +14,7 @@ class App extends Component {
       <div className="root__wrapper">
         <SideBar />
 
-        <div className="">
+        <div className="main__wrapper">
           <Header />
           <Main />
         </div>

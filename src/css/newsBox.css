@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid #252324;
+  border: 1px solid #282827;
   margin: 15px;
   cursor: pointer;
   transition: all .5s; }
@@ -45,8 +45,8 @@
 .newsBox__category {
   width: 112px;
   height: 112px;
-  background-color: #CC5E42;
-  color: #FBFBFB;
+  background-color: #ec7c5d;
+  color: #fcfcfc;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -58,8 +58,8 @@
 
 .newsBox__title {
   flex: 2;
-  background-color: #191816;
-  color: #FBFBFB;
+  background-color: #191818;
+  color: #fcfcfc;
   padding: 0.5rem 1rem;
   text-align: start;
   font-size: 14px; }
