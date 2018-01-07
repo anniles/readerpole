@@ -1,0 +1,8 @@
+.profile__user {
+  display: flex; }
+  .profile__user-avatar img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%; }
+  .profile__user-info {
+    color: #fff; }
