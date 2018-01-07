@@ -14,6 +14,7 @@ export const ORANGE_COLOR = '#ec7c5d';
 
 export const news = [
   {
+    id: 1,
     actions: 'you add it in wish read',
     title: 'music',
     logo: <FullLogo />,
@@ -21,6 +22,7 @@ export const news = [
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. labore reprehenderit aperiam!',
   },
   {
+    id: 2,
     actions: 'must read this',
     title: 'fashion',
     logo: <FullLogo />,
@@ -28,6 +30,7 @@ export const news = [
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. labore reprehenderit aperiam!',
   },
   {
+    id: 3,
     actions: 'it is red',
     title: 'politics',
     logo: <FullLogo />,
@@ -35,6 +38,7 @@ export const news = [
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. labore reprehenderit aperiam!',
   },
   {
+    id: 4,
     actions: 'not yet red',
     title: 'finanse',
     logo: <FullLogo />,
@@ -42,6 +46,7 @@ export const news = [
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. labore reprehenderit aperiam!',
   },
   {
+    id: 5,
     actions: 'it is red',
     title: 'news',
     logo: <FullLogo />,
@@ -49,6 +54,7 @@ export const news = [
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. labore reprehenderit aperiam!',
   },
   {
+    id: 6,
     actions: 'your friend said its awesome',
     title: 'economy',
     logo: <FullLogo />,
@@ -56,6 +62,7 @@ export const news = [
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. labore reprehenderit aperiam!',
   },
   {
+    id: 7,
     actions: 'it is red',
     title: 'politics',
     logo: <FullLogo />,
@@ -63,6 +70,7 @@ export const news = [
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. labore reprehenderit aperiam!',
   },
   {
+    id: 8,
     actions: 'it is red',
     title: 'news',
     logo: <FullLogo />,
@@ -72,13 +80,16 @@ export const news = [
 ];
 
 export const sideMenu = {
-  'Sources': ['papos', 'fia', 'three'],
-  'Topics': ['one', 'two', 'three'],
-  'People': ['one', 'two', 'three'],
+  Sources: ['papos', 'fia', 'three'],
+  Topics: ['one', 'two', 'three'],
+  People: ['one', 'two', 'three'],
 };
 
 export const user = {
-  'name' : 'Apos',
-  'avatar': Bg1,
-  'role': 'reader',
+  username : 'AposVas',
+  firstName: 'Apos',
+  lastName: 'Vasiliadis',
+  avatar: Bg1,
+  role: 'reader',
+  articles: [2,3,5,8],
 };

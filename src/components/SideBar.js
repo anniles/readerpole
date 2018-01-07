@@ -1,17 +1,16 @@
 import React from 'react';
 import GearIcon from './svg/GearIcon';
-import './../css/sideBar.css';
-import Bg1 from './../images/1.jpg';
 import { user, sideMenu } from './../constants';
+import './../css/sideBar.css';
 
 const SideBar = () => {
   return (
     <aside className="sideBar">
       <div className="sideBar__user">
         <div className="sideBar__user-avatar">
-          <img src={user.avatar} alt={`${user.name} avatar`}/>
+          <img src={user.avatar} alt={`${user.username} avatar`}/>
         </div>
-        <h2>{user.name}</h2>
+        <h2>{user.username}</h2>
         <GearIcon />
       </div>
 
