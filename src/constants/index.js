@@ -16,7 +16,7 @@ export const news = [
   {
     id: 1,
     actions: 'you add it in wish read',
-    title: 'music',
+    category: 'music',
     logo: <FullLogo />,
     image: Bg1,
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. labore reprehenderit aperiam!',
@@ -24,7 +24,7 @@ export const news = [
   {
     id: 2,
     actions: 'must read this',
-    title: 'fashion',
+    category: 'fashion',
     logo: <FullLogo />,
     image: Bg2,
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. labore reprehenderit aperiam!',
@@ -32,7 +32,7 @@ export const news = [
   {
     id: 3,
     actions: 'it is red',
-    title: 'politics',
+    category: 'politics',
     logo: <FullLogo />,
     image: Bg3,
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. labore reprehenderit aperiam!',
@@ -40,7 +40,7 @@ export const news = [
   {
     id: 4,
     actions: 'not yet red',
-    title: 'finanse',
+    category: 'finanse',
     logo: <FullLogo />,
     image: Bg4,
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. labore reprehenderit aperiam!',
@@ -48,7 +48,7 @@ export const news = [
   {
     id: 5,
     actions: 'it is red',
-    title: 'news',
+    category: 'news',
     logo: <FullLogo />,
     image: Bg5,
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. labore reprehenderit aperiam!',
@@ -56,7 +56,7 @@ export const news = [
   {
     id: 6,
     actions: 'your friend said its awesome',
-    title: 'economy',
+    category: 'economy',
     logo: <FullLogo />,
     image: Bg6,
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. labore reprehenderit aperiam!',
@@ -64,7 +64,7 @@ export const news = [
   {
     id: 7,
     actions: 'it is red',
-    title: 'politics',
+    category: 'politics',
     logo: <FullLogo />,
     image: Bg7,
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. labore reprehenderit aperiam!',
@@ -72,7 +72,7 @@ export const news = [
   {
     id: 8,
     actions: 'it is red',
-    title: 'news',
+    category: 'news',
     logo: <FullLogo />,
     image: Bg8,
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. labore reprehenderit aperiam!',

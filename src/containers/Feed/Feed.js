@@ -13,14 +13,14 @@ class Feed extends Component {
       <div className="main">
         <div className="newsBox__wrapper">
            <div className="newsBox-container">
-            {news.map((x, i) =>
+            {news.map(item =>
               <NewsBox
-                key={i}
-                actions={x.actions}
-                title={x.title}
-                logo={x.logo}
-                image={x.image}
-                description={x.description} />
+                key={item.id}
+                actions={item.actions}
+                category={item.category}
+                logo={item.logo}
+                image={item.image}
+                description={item.description} />
             )}
            </div>
         </div>
