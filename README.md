@@ -1,7 +1,7 @@
-### Readerpole
+# Readerpole
   This is going to be the best app you will ever need :)
 
-## To start the app
+### To start the app
   - open terminal and cd in a folder you want to save it
   - git clone the repository
   - `$cd` inside the folder that created
