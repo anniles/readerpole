@@ -13,6 +13,7 @@ import Bg8 from './../images/8.jpg';
 export const news = [
   {
     id: 1,
+    source: 'test',
     actions: 'you add it in wish read',
     category: 'music',
     logo: <FullLogo />,
@@ -21,6 +22,7 @@ export const news = [
   },
   {
     id: 2,
+    source: 'test',
     actions: 'must read this',
     category: 'fashion',
     logo: <FullLogo />,
@@ -29,6 +31,7 @@ export const news = [
   },
   {
     id: 3,
+    source: 'test',
     actions: 'it is red',
     category: 'politics',
     logo: <FullLogo />,
@@ -37,6 +40,7 @@ export const news = [
   },
   {
     id: 4,
+    source: 'test',
     actions: 'not yet red',
     category: 'finanse',
     logo: <FullLogo />,
@@ -45,6 +49,7 @@ export const news = [
   },
   {
     id: 5,
+    source: 'test',
     actions: 'it is red',
     category: 'news',
     logo: <FullLogo />,
@@ -53,6 +58,7 @@ export const news = [
   },
   {
     id: 6,
+    source: 'test',
     actions: 'your friend said its awesome',
     category: 'economy',
     logo: <FullLogo />,
@@ -61,6 +67,7 @@ export const news = [
   },
   {
     id: 7,
+    source: 'test',
     actions: 'it is red',
     category: 'politics',
     logo: <FullLogo />,
@@ -69,6 +76,7 @@ export const news = [
   },
   {
     id: 8,
+    source: 'test',
     actions: 'it is red',
     category: 'news',
     logo: <FullLogo />,
