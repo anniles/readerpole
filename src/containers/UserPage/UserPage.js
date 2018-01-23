@@ -1,38 +1,12 @@
 import React from 'react';
 import { user, news } from './../../constants';
-import './../../css/userPage.css';
 import { NewsBox } from './../../components/NewsBox';
+import mapUsersArcticles from './utils/mapUsersArticles';
+// import normalizeCatTtitle from './utils/normalizeCatTtitle';
+import './../../css/userPage.css';
 
 const UserPage = () => {
-  const usersArticles = [];
-  const fachionArticles = [];
-  const politicsArticles = [];
-  const newsArticles = [];
-
-  const mapUsersArcticles = () => {
-    user.articles.map(article =>
-      {news.map(item => {
-        if (item.id === article) {
-          switch (item.category) {
-            case 'fashion':
-              fachionArticles.push(item)
-              break;
-
-            case 'politics':
-              politicsArticles.push(item)
-              break;
-
-            case 'news':
-              newsArticles.push(item)
-              break;
-
-          }
-          // usersArticles.push(item)
-        }
-      })
-    })
-  }
-  mapUsersArcticles();
+  const usersArticleData = mapUsersArcticles(user, news);
 
   return (
     <div className="main">
@@ -49,12 +23,12 @@ const UserPage = () => {
         </div>
 
         <div className="profile__categories-boxes">
-          <div className="profile__category-wrapper">
-            <h2 className="profile__category-title">{newsArticles && newsArticles.length ? 'News' : ''}</h2>
+          {usersArticleData.map(data =>
+            <div key={data.name} className="profile__category-wrapper">
+              <h2 className="profile__category-title">{data.name}</h2>
 
-            <div className="profile__category-line">
-              {newsArticles.length
-                ? newsArticles.map(article =>
+              <div className="profile__category-line">
+                {data.usersArticles.map(article =>
                   <NewsBox
                     key={article.id}
                     actions={article.actions}
@@ -62,62 +36,14 @@ const UserPage = () => {
                     logo={article.logo}
                     image={article.image}
                     description={article.description} />
-                  )
-                : null
-              }
+                )}
             </div>
-          </div>
-
-          <div className="profile__category-wrapper">
-            <h2 className="profile__category-title">{fachionArticles && fachionArticles.length ? 'Fashion' : ''}</h2>
-
-            <div className="profile__category-line">
-              {fachionArticles.length
-                ? fachionArticles.map(article =>
-                  <NewsBox
-                    key={article.id}
-                    actions={article.actions}
-                    category={article.category}
-                    logo={article.logo}
-                    image={article.image}
-                    description={article.description} />
-                  )
-                : null
-              }
             </div>
-          </div>
-
-          <div className="profile__category-wrapper">
-            <h2 className="profile__category-title">{politicsArticles && politicsArticles.length ? 'Politics' : ''}</h2>
-
-            <div className="profile__category-line">
-              {politicsArticles.length
-                ? politicsArticles.map(article =>
-                  <NewsBox
-                    key={article.id}
-                    actions={article.actions}
-                    category={article.category}
-                    logo={article.logo}
-                    image={article.image}
-                    description={article.description} />
-                  )
-                : null
-              }
-            </div>
-          </div>
+          )}
         </div>
       </div>
     </div>
   );
 }
-// {usersArticles.map(article =>
-//   <NewsBox
-//     key={article.id}
-//     actions={article.actions}
-//     category={article.category}
-//     logo={article.logo}
-//     image={article.image}
-//     description={article.description} />
-// )}
 
 export default UserPage;

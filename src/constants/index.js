@@ -91,5 +91,5 @@ export const user = {
   lastName: 'Vasiliadis',
   avatar: Bg1,
   role: 'reader',
-  articles: [2,3,5,8],
+  articles: [2,3,5,8,6],
 };
