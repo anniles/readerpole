@@ -61,4 +61,8 @@
     width: 20px; }
 
 .header__logo {
-  margin-left: 1rem; }
+  margin-left: 1rem;
+  display: flex; }
+  .header__logo svg {
+    width: 60px;
+    fill: #ec7c5d; }

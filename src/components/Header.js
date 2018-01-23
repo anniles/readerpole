@@ -36,9 +36,3 @@ const Header = () => {
 }
 
 export default Header;
-
-// <ul className="header__nav">
-//   <li><p>FEED</p></li>
-//   <li><p>PROFILE</p></li>
-//   <li><p>DISCOVER</p></li>
-// </ul>
