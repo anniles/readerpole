@@ -30,8 +30,6 @@ export default (user, news) => {
 
   usersArticleData.forEach(data => {
     data.name = data.name.charAt(0).toUpperCase() + data.name.slice(1);
-
-    console.log(data.name);
   })
 
   return usersArticleData;
