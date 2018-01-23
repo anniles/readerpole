@@ -42,8 +42,8 @@
   display: flex; }
 
 .newsBox__category {
-  width: 112px;
-  height: 112px;
+  width: 100px;
+  height: 100px;
   background-color: #ec7c5d;
   color: #fcfcfc;
   display: flex;
@@ -66,6 +66,11 @@
   padding: 0.5rem 1rem;
   text-align: start;
   font-size: 14px; }
+  .newsBox__title p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden; }
 
 .newsBox__actions {
   height: 100%;

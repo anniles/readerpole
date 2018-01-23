@@ -50,8 +50,10 @@
   display: flex;
 
 .newsBox__category
-  width: 112px;
-  height: 112px;
+  width: 100px;
+  height: 100px;
+  // width: 112px;
+  // height: 112px;
   background-color: $rp__orange;
   color: $rp__white;
   display: flex;
@@ -74,6 +76,12 @@
   padding: 0.5rem 1rem;
   text-align: start;
   font-size: 14px;
+  // this is a trick for taking only 3 lines
+  p
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 
 .newsBox__actions
   height: 100%;
