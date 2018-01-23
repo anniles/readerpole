@@ -10,8 +10,6 @@ import Bg6 from './../images/6.jpg';
 import Bg7 from './../images/7.jpg';
 import Bg8 from './../images/8.jpg';
 
-export const ORANGE_COLOR = '#ec7c5d';
-
 export const news = [
   {
     id: 1,
