@@ -12,8 +12,7 @@
   .newsBox:hover .newsBox__image {
     transform: scale(1.1); }
   .newsBox:hover .newsBox__actions {
-    height: 100%;
-    bottom: 0; }
+    opacity: 1; }
 
 .newsBox-container {
   max-width: 1150px;
@@ -65,8 +64,9 @@
   font-size: 14px; }
 
 .newsBox__actions {
-  height: 0;
-  transition: all 0.3s;
+  height: 100%;
+  transition: all 0.4s;
+  opacity: 0;
   color: #fff;
   font-size: 1.3rem;
   display: flex;
@@ -74,7 +74,7 @@
   align-items: center;
   width: 100%;
   position: absolute;
-  bottom: -1rem;
+  bottom: 0;
   background-color: rgba(0, 0, 0, 0.7); }
 
 body {
