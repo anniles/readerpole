@@ -1,3 +1,12 @@
+### Readerpole
+  This is going to be the best app you will ever need :)
+
+## To start the app
+  - open terminal and cd in a folder you want to save it
+  - git clone the repository
+  - `$cd` inside the folder that created
+  - run `$yarn start` to start the server
+
 <!-- This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
