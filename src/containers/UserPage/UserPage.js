@@ -23,23 +23,26 @@ const UserPage = () => {
         </div>
 
         <div className="profile__categories-boxes">
-          {usersArticleData.map(data =>
-            <div key={data.name} className="profile__category-wrapper">
-              <h2 className="profile__category-title">{data.name}</h2>
+          {usersArticleData && usersArticleData.length
+            ?usersArticleData.map(data =>
+              <div key={data.name} className="profile__category-wrapper">
+                <h2 className="profile__category-title">{data.name}</h2>
 
-              <div className="profile__category-line">
-                {data.usersArticles.map(article =>
-                  <NewsBox
-                    key={article.id}
-                    actions={article.actions}
-                    category={article.category}
-                    logo={article.logo}
-                    image={article.image}
-                    description={article.description} />
-                )}
-            </div>
-            </div>
-          )}
+                <div className="profile__category-line">
+                  {data.usersArticles.map(article =>
+                    <NewsBox
+                      key={article.id}
+                      actions={article.actions}
+                      category={article.category}
+                      logo={article.logo}
+                      image={article.image}
+                      description={article.description} />
+                  )}
+              </div>
+              </div>
+            )
+            : <h1>Go read something</h1>
+          }
         </div>
       </div>
     </div>
