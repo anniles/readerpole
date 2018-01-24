@@ -78,10 +78,19 @@
   font-size: 14px;
   // this is a trick for taking only 3 lines
   p
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
+    position: relative;
+    height: 3rem;
     overflow: hidden;
+    &:after
+      content: "";
+      text-align: right;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 70%;
+      height: 1.2em;
+      background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(25, 24, 24, 1) 80%);
+
 
 .newsBox__actions
   height: 100%;

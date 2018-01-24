@@ -51,12 +51,12 @@
     width: 100%;
     padding: 0.5rem 1rem 0.5rem 40px; }
 
-.header__search--icon {
+.header__search-icon {
   position: absolute;
   height: 20px;
   width: 20px;
   padding: 0 10px; }
-  .header__search--icon svg {
+  .header__search-icon svg {
     height: 20px;
     width: 20px; }
 

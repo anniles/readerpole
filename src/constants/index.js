@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { getRpCategories } from './../utils';
+
 import FullLogo from './../components/svg/FullLogo';
 import Bg1 from './../images/1.jpg';
 import Bg2 from './../images/2.jpg';
@@ -85,9 +87,13 @@ export const news = [
   },
 ];
 
+const rpCategories = getRpCategories();
+
+console.log(rpCategories);
+
 export const sideMenu = {
   Sources: ['papos', 'fia', 'three'],
-  Topics: ['one', 'two', 'three'],
+  Topics: rpCategories,
   People: ['one', 'two', 'three'],
 };
 

@@ -1,9 +1,12 @@
 import React from 'react';
 import GearIcon from './svg/GearIcon';
 import { user, sideMenu } from './../constants';
+import { getRpCategories } from './../utils';
 import './../css/sideBar.css';
 
 const SideBar = () => {
+  const rpCategories = getRpCategories();
+
   return (
     <aside className="sideBar">
       <div className="sideBar__user">
@@ -21,11 +24,9 @@ const SideBar = () => {
               return (
                 <div key={index}>
                   <h3>{key}</h3>
-                  {sideMenu[key].map((key, i) => {
-                    return (
-                      <p key={i}>{key}</p>
-                    )
-                  })}
+                  {sideMenu[key].map((key, i) =>
+                    <p key={i}>{key}</p>
+                  )}
                 </div>
               )
             })

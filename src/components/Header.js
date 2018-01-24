@@ -24,7 +24,7 @@ const Header = () => {
       </ul>
 
       <div className="header__search">
-        <div className="header__search--icon"><SearchIcon /></div>
+        <div className="header__search-icon"><SearchIcon /></div>
         <input type="text"/>
       </div>
 
