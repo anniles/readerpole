@@ -4,11 +4,13 @@ import {
   Route,
   Link,
   NavLink
-} from 'react-router-dom'
+} from 'react-router-dom';
 
 import App from './../containers/App/App.js';
 import UserPage from './../containers/UserPage/UserPage.js';
 import Discover from './../containers/Discover/Discover.js';
+
+import Icon from './Icon';
 
 import FullLogo from './svg/FullLogo';
 import SearchIcon from './svg/SearchIcon';
@@ -30,9 +32,11 @@ const Header = () => {
 
       <div className="header__logo">
         <FullLogo />
+
       </div>
     </div>
   )
 }
 
 export default Header;
+      // <Icon icon="logo" />

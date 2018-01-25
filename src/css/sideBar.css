@@ -7,7 +7,8 @@
   position: fixed;
   top: 0;
   bottom: 0;
-  left: 0; }
+  left: 0;
+  flex: 1; }
 
 .sideBar__wrapper {
   position: absolute;
@@ -15,6 +16,7 @@
   bottom: 0;
   left: 0;
   right: 0;
+  height: 100%;
   overflow-y: auto;
   padding-bottom: 2rem; }
 
@@ -46,16 +48,23 @@
 
 .sideBar__menu {
   display: flex;
+  height: calc( 100% - 2rem);
   flex-direction: column;
   width: 100%;
   flex: 1;
   background-color: #282827;
   padding: 2rem 0 0 0; }
-  .sideBar__menu h3 {
+  .sideBar__menu header {
     background-color: #191818;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .sideBar__menu h3 {
     color: #fff;
     padding: 0.5rem 1rem;
     margin: 0;
+    flex: 1;
     text-transform: uppercase; }
   .sideBar__menu p {
     color: #fff;
@@ -64,4 +73,25 @@
     cursor: pointer;
     transition: all .2s; }
     .sideBar__menu p:hover {
-      color: #ec7c5d; }
+      color: #ec7c5d;
+      background-color: #191818; }
+
+.sideBar__section {
+  flex: 1; }
+
+.sideBar__section-add {
+  flex: none;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  border-left: 4px solid #282827; }
+  .sideBar__section-add:hover {
+    cursor: pointer; }
+    .sideBar__section-add:hover svg {
+      fill: #ec7c5d; }
+  .sideBar__section-add svg {
+    width: 24px;
+    height: auto;
+    fill: #fcfcfc; }

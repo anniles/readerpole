@@ -91,12 +91,10 @@ const rpCategories = getRpCategories();
 
 const rpSources = getRpSources();
 
-console.log(rpCategories);
-
 export const sideMenu = {
   Sources: rpSources,
   Topics: rpCategories,
-  People: ['one', 'two', 'three'],
+  People: ['AposVas', 'Gerald', 'Sof'],
 };
 
 export const user = {
