@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { getRpCategories } from './../utils';
+import { getRpCategories, getRpSources } from './../utils';
 
 import FullLogo from './../components/svg/FullLogo';
 import Bg1 from './../images/1.jpg';
@@ -15,7 +15,7 @@ import Bg8 from './../images/8.jpg';
 export const news = [
   {
     id: 1,
-    source: 'test',
+    source: 'times',
     actions: 'you add it in wish read',
     category: 'music',
     logo: <FullLogo />,
@@ -24,7 +24,7 @@ export const news = [
   },
   {
     id: 2,
-    source: 'test',
+    source: 'bbc',
     actions: 'must read this',
     category: 'fashion',
     logo: <FullLogo />,
@@ -33,7 +33,7 @@ export const news = [
   },
   {
     id: 3,
-    source: 'test',
+    source: 'times',
     actions: 'it is red',
     category: 'politics',
     logo: <FullLogo />,
@@ -42,7 +42,7 @@ export const news = [
   },
   {
     id: 4,
-    source: 'test',
+    source: 'wsj',
     actions: 'not yet red',
     category: 'finanse',
     logo: <FullLogo />,
@@ -51,7 +51,7 @@ export const news = [
   },
   {
     id: 5,
-    source: 'test',
+    source: 'Brief.news',
     actions: 'it is red',
     category: 'news',
     logo: <FullLogo />,
@@ -60,7 +60,7 @@ export const news = [
   },
   {
     id: 6,
-    source: 'test',
+    source: 'The Economist',
     actions: 'your friend said its awesome',
     category: 'economy',
     logo: <FullLogo />,
@@ -69,7 +69,7 @@ export const news = [
   },
   {
     id: 7,
-    source: 'test',
+    source: 'bbc',
     actions: 'it is red',
     category: 'politics',
     logo: <FullLogo />,
@@ -78,7 +78,7 @@ export const news = [
   },
   {
     id: 8,
-    source: 'test',
+    source: 'The Economist',
     actions: 'it is red',
     category: 'news',
     logo: <FullLogo />,
@@ -89,10 +89,12 @@ export const news = [
 
 const rpCategories = getRpCategories();
 
+const rpSources = getRpSources();
+
 console.log(rpCategories);
 
 export const sideMenu = {
-  Sources: ['papos', 'fia', 'three'],
+  Sources: rpSources,
   Topics: rpCategories,
   People: ['one', 'two', 'three'],
 };
